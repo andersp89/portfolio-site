@@ -17,119 +17,138 @@
     <!-- Javascript -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
   </head>
   <body>
   
-  <div class="container">
+  <div class="container" id="nonbootstrap">
     
     <!-- Header -->
     <header>
       <div class="row header">
         <div class="col-md-6"> <!-- text-uppercase">-->
-          <h1>Anders Pedersen</h1>
-          <h4 class="text-uppercase">Forretningsorienteret Full-Stack Udvikler</h4>
+          <h1 id="nonbootstrap">Anders Pedersen</h1>
+          <h2 id="nonbootstrap" class="text-uppercase">Forretningsorienteret Full-Stack Udvikler</h2>
         </div>
         
         <div class="col-md-6 text-right">
-          <!--<div class="zocial-buffer" width="40" height="40"></div>-->
-          <span class="zocial-buffer icon" width="40" height="40"></span>
-
-          <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-            <title>Responsive logo</title>
-            <path d="M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zM12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zm0-10c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"></path>
-          </svg>
-
-      <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <title>Responsive logo</title>
-        <path d="M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zM12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zm0-10c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"></path>
-      </svg>
-
+          <span media="(mix-width: 1000px)" class="zocial-buffer logo"></span>
         </div>   
       </div>
 
-      <div class="row horizontal-line">
-        <!--<hr>-->
+      <div class="row">
         <div class="hr"></div>
       </div>
       
     </header>
-    
 
-
-    <!-- Main content -->
+    <!-- Profile picture -->
     <div class="row">
       <div class="col-md-12">
         <img src="./img/profile-apn.jpg" class="img-responsive">
-        <p>Forretningsingeniør fra Aalborg Universitet, som brænder for at løse forretningskritiske problemer med kode. Jeg har erfarring med lkommen til min side, dette kunne være en lille beskrivelse om mig selv i højre hjørne af foto med fokus på <span>Front-end:</span> HTML, CSS, JavaScript [jQuery, KnockoutJS]
-        <span>Back-end:</span> Java, Python (Ruby, C)
-        Others: Git, Postgresql, MySQL, AWS, GAE, Heroku, Grunt, Bootstrap
-      *(): limited experience. []: Experience also in</p>
-        <!--<img src="./bootstrap-prestructure_files/1140x350" class="img-responsive">-->
+        <div id="profile-text">
+          <p><b>Forretningsingeniør</b> (M.sc.) fra Aalborg Universitet, som brænder for at løse forretningskritiske problemer med kode. Jeg har erfarring med:</p>
+          <ul id="nonbootstrap">
+            <li><b>Front-end:</b> HTML (Bootstrap), CSS, JavaScript (jQuery, KnockoutJS)</li>
+            <li><b>Back-end:</b> Java, Python, PostgreSQL, MySQL [Ruby, C]</li>
+            <li><b>Andet:</b> Git, AWS, GAE, Heroku, Grunt</li>
+          </ul>
+          <p id="profile-text-small">*( ): Har også erfarring med, [ ]: Begrænset erfarring.</p>
+          <p>Herunder finder du du et udvalg af mit arbejde. Kontakt mig gerne på <a href="mailto:anders@ptrading.dk"><b>e-mail</b></a>.</p>   
+        </div>
+        <div class="row">
+          <div class="hr hr-profile-text"></div>
+        </div>
       </div>
     </div>
 
+    <!-- Featured work -->
     <div class="row">
-    <div class="col-md-12">
-      <h2>Featured Work</h2>
-    </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        <h3>Item Catalog</h3>
-        <img src="./bootstrap-prestructure_files/555x300" class="img-responsive" data-toggle="modal" data-target="#project1">
-        <p><a href="http://github.com/">Link to project</a></p>
-      </div>
-      <div class="col-md-6">
-        <h3>Travel Planner</h3>
-        <img src="./bootstrap-prestructure_files/555x300" class="img-responsive" data-toggle="modal" data-target="#project2">
-        <p><a href="http://github.com/">Link to project</a></p>
+      <div class="col-md-12" id="nonbootstrap">
+        <h3 id="nonbootstrap">Udvalgt Arbejde:</h3>
       </div>
     </div>
     <div class="row">
       <div class="col-md-6">
-        <h3>Set-up Linux Server</h3>
-        <img src="./bootstrap-prestructure_files/555x300" class="img-responsive" data-toggle="modal" data-target="#project3">
-        <p><a href="http://github.com/">Link to project</a></p>
+        <h4 id="nonbootstrap">Produkt Katalog</h4>
+        <img id="work-img" src="./img/work_catalog_app.png" class="img-responsive" data-toggle="modal" data-target="#project1">
+        <p id="work-description">CRUD App til at vise kategorier og produkter. Brugeren kan logge ind med sin LinkedIn profil - <a id="work-link" data-toggle="modal" data-target="#project1">Læs mere</a>.</p>
       </div>
       <div class="col-md-6">
-        <h3>Multi-User Blog</h3>
-        <img src="./bootstrap-prestructure_files/555x300" class="img-responsive" data-toggle="modal" data-target="#project4">
-        <p><a href="http://github.com/">Link to project</a></p>
+        <h4 id="nonbootstrap">Travel Planner</h4>
+        <img src="./img/work_travel_planner.png" class="img-responsive" data-toggle="modal" data-target="#project2">
+        <p><a id="nonbootstrap" href="http://github.com/">Link to project</a></p>
       </div>
     </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h4 id="nonbootstrap">Set-up Linux Server</h4>
+        <img id="work-img" src="./img/work_linux_server.png" class="img-responsive" data-toggle="modal" data-target="#project3">
+        <p><a id="nonbootstrap" href="http://github.com/">Link to project</a></p>
+      </div>
+      <div class="col-md-6">
+        <h4 id="nonbootstrap">Multi-User Blog</h4>
+        <img src="./img/work_multi_user_blog.png" class="img-responsive" data-toggle="modal" data-target="#project4">
+        <p><a id="nonbootstrap" href="http://github.com/">Link to project</a></p>
+      </div>
+    </div>
+      <div class="row">
+      <div class="col-md-6">
+        <h4 id="nonbootstrap">Log Analysis Tool</h4>
+        <img src="./img/work_reporting_tool.png" class="img-responsive" data-toggle="modal" data-target="/html/pp.html#project4">
+        <p><a id="nonbootstrap" href="http://github.com/">Link to project</a></p>
+      </div>
+      <div class="col-md-6">
+        <h4 id="nonbootstrap">Responsive Portfolio Page</h4>
+        <img src="./img/work_portfolio_page.png" class="img-responsive" data-toggle="modal" data-target="#project4">
+        <p><a id="nonbootstrap" href="http://github.com/">Link to project</a></p>
+      </div>
+    </div>
+
+
             <footer>
-      <div class="row horizontal-line">
-        <!--<hr>-->
-        <div class="hr"></div>
+      <div class="row">
+        <div class="hr hr-footer"></div>
       </div>
 
-
+      <p id="nonbootstrap" class="social-text">Du er altid velkommen til, at tage kontakt på:</p>
       <div id="social">
-      <a href="https://twitter.com/home?status=https://github.com/udacity/responsive-images" class="zocial-twitter"> Twitter</a>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https://github.com/udacity/responsive-images" class="zocial-facebook"> Facebook</a>
-      <a href="https://plus.google.com/share?url=https://github.com/udacity/responsive-images" class="zocial-googleplus"> Google+</a>
-      <a href="http://digg.com/submit?phase=2&url=https%3A%2F%2Fgithub.com%2Fudacity%2Fresponsive-images&title=Udacity%20nano%20course%3A%20Responsive%20Images&bodytext=Responsive%20images%20for%20your%20sites%20and%20web%20apps&topic=tech_news" class="zocial-digg"> Digg</a>
+      <a href="https://twitter.com/home?status=https://github.com/udacity/responsive-images" class="zocial-linkedin">LinkedIn</a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://github.com/udacity/responsive-images" class="zocial-github">GitHub</a>
     </div>
 </footer>
   </div>
 
-    <!-- 1st Modal -->
-    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
-                </div>
-                <div class="modal-body">
-                    <img class="img-responsive" src="images/555.jpeg">
-                    This was my first project in this class. I learned a lot about HTML and CSS.
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
+<!-- Modals -->
+<!-- Item catalog Modal -->
+<div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Produkt katalog</h4>
+            </div>
+            <div id="work-description" class="modal-body">
+                <img class="img-responsive" src="./img/work_catalog_app.png">
+                <p>Flask web app supporting CRUD operations on a catalog with categories and items, with authentication using OAuth2.0 with LinkedIn.</p>
+                <p><b>Technology</b></p>
+                <ul>
+                  <li>Python</li>
+                  <li>Flask</li>
+                  <li>OAuth2.0</li>
+                  <li>SQLAlchemy</li>
+                  <li>SQLite</li>
+                  <li>VirtualBox with Vagrant</li>
+                </ul>
+                <p>Read more about the project and get its source code at <a href="https://github.com/andersp89/catalog-app">Github</a>.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Luk</button>
             </div>
         </div>
     </div>
+</div>
+
+
 
     <!-- 2nd Modal -->
   <div class="modal fade" tabindex="-1" role="dialog" id="project2">

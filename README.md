@@ -35,12 +35,9 @@ Requirements:
 - An image's associated title and text renders next to the image in all viewport sizes.
 
 
-Featured work should be:
-- Item Catalog
-- Travel Planner
-- Set-up Linux server
-- Multi-user blog
-
+-> Skriv tekst til hvert arbejde, med modals. + gør html kode pæn
+-> Fix social links i bunden med bredde.
+-> Gå igennem review requirements.
 
 To-dos!:
 * Code, test, refine
