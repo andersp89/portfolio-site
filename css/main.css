@@ -148,6 +148,10 @@ p.social-text {
   font-style: italic;
 }
 
+#social-link-text {
+  margin-left: 10px;
+}
+
 div#social a {
   margin: 0 5em 0 0;
   line-height: 2em
